@@ -6,7 +6,7 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Christoper E. Calvachi</title>
     <meta name="description" content="WDD 131 - final project where we put everything we have learned to the test in a single project.">
     <meta name="author" content="Christoper E. Calvachi">
-    <link rel="stylesheet" href="../final/styles/styles.css">
+    <link rel="stylesheet" href="../final/styles/form.css">
     <script src="../final/scripts/final.js" defer></script>
 </head>
 <body>
@@ -36,26 +36,28 @@
             <img src="./img/landing.png" alt="">
         </div>
     </header>
-    <main class="news container">
-        <div class="news-con">
-            <img src="./img/news.jpeg" alt="">
-            <h3>Power outages affect farmers</h3>
-            <p>Continuous blackouts in several areas of the country are causing serious problems for farmers, who depend on electricity to irrigate their crops, refrigerate products and operate machinery. Many producers have reported losses due to the impossibility of maintaining normal operations during power outages.</p>
-        </div>
-        <hr>
-        <div class="news-con">
-            <img src="./img/news2.jpeg" alt="">
-            <h3>The electricity crisis will be resolved before December 20.</h3>
-            <p>The government has announced that it is working to solve the electricity crisis affecting several regions of the country. It is estimated that before December 20 the electricity supply will be restored in a stable manner, thanks to the implementation of new energy generation projects and improvements in the infrastructure of the electric system.</p>
-        </div>
-        <hr>
-        <div class="news-con">
-            <img src="./img/news3.jpeg" alt="">
-            <h3>Care of electrical appliances during blackouts</h3>
-            <p>During blackouts, it is important to take precautions to protect household appliances from damage. Experts recommend unplugging electronic appliances during power outages and waiting a few minutes after power has been restored before plugging them back in to avoid voltage spikes that could damage them.</p>
-            <a href="../final/news.html" class="btn-1">NEWS AVAILABLE NOW</a>
-        </div>
-    </main>
+
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
     <footer>
         <div class="container">
             <div class="info">
